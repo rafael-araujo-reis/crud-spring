@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 // import javax.persistence.Table;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.Data;
 
 @Data
@@ -16,6 +18,7 @@ public class Course {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
+  @JsonProperty("_id")
   private Long id;
 
   // @Column(name = "coluna_nome_diferente")
