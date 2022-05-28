@@ -48,7 +48,7 @@ public class CoursesControler {
 
       Course course = new Course();
       course.setName("Angular com Spring Boot");
-      course.setCategory("Front-end");
+      course.setCategory("frontend");
 
       courseRepository.save(course);
     };
